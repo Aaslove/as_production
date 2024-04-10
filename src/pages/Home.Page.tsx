@@ -1,5 +1,5 @@
 import { FaArrowUpLong } from "react-icons/fa6"
-import { Marquee, About, EyeBg } from "../Components"
+import { Marquee, About, EyeBg, FeaturedProject } from "../Components"
 export default function Home() {
     return (
         <div className='w-full h-full bg-zinc-900 pt-1'>
@@ -30,6 +30,7 @@ export default function Home() {
             <Marquee />
             <About />
             <EyeBg />
+            <FeaturedProject />
         </div>
     )
 }
