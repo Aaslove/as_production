@@ -29,7 +29,7 @@ function EyeBg() {
 
     return (
         <div className="eyes w-full h-screen  bg-zinc-100 overflow-hidden">
-            <div className='relative w-full h-full bg-cover bg-center bg-[url("./src/assets/eyeBg.jpg")]'>
+            <div data-scroll data-scroll-speed="-0.7" className='relative w-full  h-full bg-cover bg-center bg-[url("./src/assets/eyeBg.jpg")]'>
                 <Eye rotate={rotate} />
             </div>
         </div >

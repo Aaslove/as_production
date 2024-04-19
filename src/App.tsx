@@ -1,11 +1,12 @@
 import { Suspense } from "react"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Navbar, Loader } from './Components'
-import { Home, About } from "./pages"
+import { Navbar, Loader, Footer, About } from './Components'
+import { Home } from "./pages"
+
 
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter data-scroll >
       <Navbar />
       <Suspense fallback={<Loader />}>
         <Routes>
@@ -14,6 +15,7 @@ function App() {
           <Route path='/about' element={<About />} />
         </Routes>
       </Suspense>
+      <Footer />
     </BrowserRouter>
   )
 }
